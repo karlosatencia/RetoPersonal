@@ -19,4 +19,8 @@ public class MeetingUi {
     }
     public static final Target btn_saveMeeting = Target.the("Guardar reunion")
             .located(By.xpath("//span[text()='Guardar']"));
+    public static Target meetingWithName(String meetingName) {
+        return Target.the("Meeting with name " + meetingName)
+                .locatedBy("//a[text()='{0}']").of(meetingName);
+    }
 }

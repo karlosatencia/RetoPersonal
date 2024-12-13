@@ -8,4 +8,7 @@ public class MenuUi {
             .located(By.xpath("//span[text()='Reunión']\n"));
     public static final Target unidadesDeNegocio = Target.the("Unidades de negocio")
             .located(By.xpath("//span[text()='Unidades de negocio']"));
+    public static final Target reuniones = Target.the("Reuniones")
+            .located(By.xpath("//span[text()='Reuniones']"));
+
 }

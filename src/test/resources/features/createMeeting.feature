@@ -10,8 +10,8 @@ Feature: Create meeting in Demo Serenity
       | unitname   |
       | <unitname> |
     And schedules a new meeting
-      | meetingname   | meetingnumber |
-      | Practica Auto | ABC-01        |
+      | unitname   | meetingname   | meetingnumber |
+      | <unitname> | <meetingname> | <meetingnumber>|
     Then the system should confirm that the meeting is created successfully
 
     Examples:

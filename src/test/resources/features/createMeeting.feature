@@ -1,19 +1,22 @@
-Feature: Create meeting in Demo Serenity
+Feature: scheduling a meeting within the website
+
+  Background:
+
+  Scenario Outline: Create a new business unit and schedule a meeting
+    Given the user enters the Demo Serenity website
+    When logs in with valid credentials
+      | username   | password   |
+      | <username> | <password> |
+    Examples:
+      | username | password |
+      | admin    | serenity |
 
   @CreateMeeting
-  Scenario: Create a new business unit and schedule a meeting
-    Given the user enters the Demo Serenity website
-    And logs in with valid credentials
-      | username    | password   |
-      | <username>  | <password> |
-    When the user creates a new business unit
-      | unitname   |
-      | <unitname> |
-    And schedules a new meeting
-      | unitname   | meetingname   | meetingnumber |
-      | <unitname> | <meetingname> | <meetingnumber>|
+  Scenario Outline: Meeting creationg
+    When the user attempts to schedule a new meeting with
+      | meetingName   | meetingNumber   |
+      | <meetingName> | <meetingNumber> |
     Then the system should confirm that the meeting is created successfully
-
     Examples:
-      | username | password | unitname | meetingname | meetingnumber |
-      | admin    | serenity | Unit Test| Reto Auto   | AB-01         |
+      | meetingName | meetingNumber |
+      | Reto Auto   | AB-01         |

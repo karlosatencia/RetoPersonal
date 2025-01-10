@@ -10,6 +10,7 @@ public class ValidateMeetingCreated implements Question<Boolean> {
     private String meetingName;
 
     public ValidateMeetingCreated(String meetingName) {
+
         this.meetingName = meetingName;
     }
     public static ValidateMeetingCreated withName(String meetingName) {

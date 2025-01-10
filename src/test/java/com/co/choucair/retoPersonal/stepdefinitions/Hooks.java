@@ -13,8 +13,4 @@ public class Hooks {
     public void setup() {
         OnStage.setTheStage(new OnlineCast());
     }
-    @After
-    public void close() {
-        Serenity.getDriver().close();
-    }
 }

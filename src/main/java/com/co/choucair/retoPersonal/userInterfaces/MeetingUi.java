@@ -17,6 +17,9 @@ public class MeetingUi {
         String xpath = String.format("//div[@class='select2-result-label' and text()='Administration » %s']", unitname);
         return Target.the("Opción de unidad padre").located(By.xpath(xpath));
     }
+
+    public static final Target PARENT_UNIT = Target.the("Unidad padre")
+            .locatedBy("//div[@class='select2-result-label' and text()='Administration » {0}']");
     public static final Target btn_saveMeeting = Target.the("Guardar reunion")
             .located(By.xpath("//span[text()='Guardar']"));
     public static Target meetingWithName(String meetingName) {

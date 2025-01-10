@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         //Define la ruta donde se encuentran los archivos .feature
         features = "src/test/resources/features/createMeeting.feature",
-        tags = "@CreateMeeting",
+        tags = "",
         glue = "com.co.choucair.retoPersonal.stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )

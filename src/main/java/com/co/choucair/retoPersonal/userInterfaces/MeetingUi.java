@@ -26,4 +26,29 @@ public class MeetingUi {
         return Target.the("Meeting with name " + meetingName)
                 .locatedBy("//a[text()='{0}']").of(meetingName);
     }
+    public static final Target slt_typeMeeting = Target.the("Tipo de reunión")
+            .located(By.id("select2-chosen-6"));
+    public static final Target optionTypeMeeting = Target.the("Opción tipo de reunión")
+            .located(By.id("select2-result-label-14"));
+    public static final Target inp_startDate = Target.the("Fecha de inicio")
+            .located(By.id("Serenity_Pro_Meeting_MeetingDialog10_StartDate"));
+    public static final Target inp_endDate = Target.the("Fecha de fin")
+            .located(By.id("Serenity_Pro_Meeting_MeetingDialog10_EndDate"));
+    public static final Target inp_location = Target.the("Ubicación")
+            .located(By.id("select2-chosen-7"));
+    public static final Target optionLocation = Target.the("Opción ubicación")
+            .located(By.id("select2-result-label-23"));
+    public static final Target inp_organizer = Target.the("Organizador")
+            .located(By.id("select2-chosen-9"));
+    public static final Target optionOrganizer = Target.the("Opción organizador")
+            .located(By.id("select2-result-label-128"));
+    public static final Target inp_reporter = Target.the("Reportero")
+            .located(By.id("select2-chosen-10"));
+    public static final Target optionReporter = Target.the("Opción reportero")
+            .located(By.id("select2-result-label-228"));
+    public static final Target inp_assistant = Target.the("Asistente")
+            .located(By.id("select2-chosen-12"));
+    public static final Target inp_searchAssistant = Target.the("Buscador asistente")
+            .located(By.id("s2id_autogen12_search"));
+
 }
